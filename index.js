@@ -1,6 +1,7 @@
 var restify = require('restify');
 var restifyMongoose = require('restify-mongoose');
 var mongoose = require('mongoose');
+var port = process.env.PORT || 4500;
 
 mongoose.connect('mongodb://localhost/directoryApi');
 
@@ -40,6 +41,6 @@ var Directory = mongoose.model('directory', DirectorySchema);
 
 restifyMongoose(Directory).serve('/api/directory', server);
 
-server.listen(4500, function () {
+server.listen(port, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
