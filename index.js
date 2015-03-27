@@ -23,7 +23,7 @@ var DirectorySchema = new mongoose.Schema({
   email: {
     type: String,
     required: true
-  },  
+  },
   phone: {
     type: String
   },
@@ -31,7 +31,7 @@ var DirectorySchema = new mongoose.Schema({
     type: String
   },
   date: {
-    type: Date,    
+    type: Date,
     default: Date.now
   }
 });
