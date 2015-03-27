@@ -1,0 +1,24 @@
+{
+  "name": "napi-demo",
+  "version": "1.0.0",
+  "description": "REST API demo to test deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:edsadr/napi-demo.git"
+  },
+  "author": "Adrián Estrada <edsadr@gmail.com> (http://medellinjs.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edsadr/napi-demo/issues"
+  },
+  "homepage": "https://github.com/edsadr/napi-demo",
+  "dependencies": {
+    "mongoose": "^4.0.0",
+    "restify": "^3.0.1",
+    "restify-mongoose": "^0.2.3"
+  }
+}
