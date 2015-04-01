@@ -7,7 +7,7 @@ mongoose.connect('mongodb://localhost/directoryApi');
 
 var server = restify.createServer({
   name: 'restify directory REST API',
-  version: '1.0.0'
+  version: '1.0.1'
 });
 
 server.use(restify.acceptParser(server.acceptable));
@@ -42,7 +42,7 @@ var Directory = mongoose.model('directory', DirectorySchema);
 restifyMongoose(Directory).serve('/api/directory', server);
 
 server.get('/', function(req,res,next){
-  res.end('ok');
+  res.end('ok !');
 });
 
 server.listen(port, function () {
