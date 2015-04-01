@@ -41,8 +41,8 @@ var Directory = mongoose.model('directory', DirectorySchema);
 
 restifyMongoose(Directory).serve('/api/directory', server);
 
-server.get('/', function(req,res,next){
-  res.end('ok !!!!');
+server.get('/' function(req,res,next){
+  res.end('ok !!!!!');
 });
 
 server.listen(port, function () {
