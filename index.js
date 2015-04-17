@@ -8,7 +8,7 @@ mongoose.connect(connectURL);
 
 var server = restify.createServer({
   name: 'restify directory REST API',
-  version: '1.0.1'
+  version: '1.0.2'
 });
 
 server.use(restify.acceptParser(server.acceptable));
